@@ -8,3 +8,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+/starter/.models/
+/starter/.qdrant/
+/starter/results/pipeline.log

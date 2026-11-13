@@ -1,0 +1,18 @@
+2026-11-13 17:11:15,865 ERROR __main__: ingest failed
+Traceback (most recent call last):
+  File "<repo>/starter/src/ingestion.py", line 44, in load_jsonl
+    document_id, source, page, section, text = (
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/starter/src/ingestion.py", line 45, in <genexpr>
+    row[field] for field in ("document_id", "source", "page", "section", "text")
+    ~~~^^^^^^^
+KeyError: 'document_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<repo>/starter/src/run.py", line 49, in main
+    pages = load_jsonl(args.corpus)
+  File "<repo>/starter/src/ingestion.py", line 64, in load_jsonl
+    raise ValueError(f"{path}:{number}: {error}") from error
+ValueError: <fixture>/invalid.jsonl:1: 'document_id'

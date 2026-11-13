@@ -1,0 +1,4 @@
+strategy,question_id,rank,chunk_id,page,equivalent_evidence,reason
+A,q18,2,88890da4-17d5-517c-921a-50e568bec50d,07.12,0,Câu bị cắt trước khi nêu đầy đủ việc kiểm tra commit tổ tiên.
+B,q18,3,3bd672b9-6e3d-5f02-b15c-748c9783cdfc,07.12,1,Nêu cả tính hợp lệ của bundle và yêu cầu có đủ commit tổ tiên.
+C,q18,3,3bd672b9-6e3d-5f02-b15c-748c9783cdfc,07.12,1,Nêu cả tính hợp lệ của bundle và yêu cầu có đủ commit tổ tiên.

@@ -1,0 +1,17 @@
+{
+  "A": {
+    "questions": 5,
+    "hit_at_1": 0,
+    "evidence_hit_at_3": 0
+  },
+  "B": {
+    "questions": 5,
+    "hit_at_1": 0,
+    "evidence_hit_at_3": 0
+  },
+  "C": {
+    "questions": 5,
+    "hit_at_1": 0,
+    "evidence_hit_at_3": 0
+  }
+}

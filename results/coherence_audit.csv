@@ -1,0 +1,31 @@
+strategy,page,offset,chunk_id,char_start,char_end,score,reason
+A,02.01,1927,de68fedf-b6ad-55bd-ac65-89b793e4b60f,1800,2300,1,Mở giữa từ và thiếu phần đầu hướng dẫn clone.
+A,02.02,12259,7b26f957-341f-5511-88b8-0ae8c670e7a5,12150,12650,1,"Câu hỏi mở đầu và output status bị cắt, phần phân biệt status/diff vẫn hiểu được."
+A,02.03,6462,eb21bffd-94fb-5edf-8598-b99b6c75b39f,6300,6800,1,Mở giữa từ nên thiếu định nghĩa author/committer; ví dụ graph dở.
+A,02.04,4480,456ca543-cf4d-5034-a5a1-2b840572b670,4050,4550,1,Mở giữa câu từ mục reset; ví dụ status bị cắt.
+A,02.05,5507,4b22de09-d3e3-532a-a09e-4373ae886e55,5400,5900,1,Câu đầu mất chủ thể fetch; đoạn về pull còn hiểu được.
+A,02.06,4407,53f6d806-dd12-50d0-8378-07d751484281,4050,4550,2,Tình huống gắn tag muộn và lệnh có đủ; chỉ thiếu output xác nhận.
+A,02.07,1094,6c619876-1e5e-523c-9fa5-45de55816fdf,900,1400,2,"Giải thích lý do tạo alias unstage, có cả ví dụ cấu hình và cách gọi."
+A,03.01,4326,360fae7f-2ba6-5031-862b-6fa7e2152a57,4050,4550,2,Nêu checkout testing và HEAD đổi đích; câu so sánh phụ cuối bị cắt.
+A,03.02,5750,910fb0ec-faf0-5daa-9d58-0cb7e97b8264,5400,5900,2,"Nêu nhánh đích, lệnh merge và kết quả thành công."
+A,03.03,2959,38806dab-fef2-550b-baad-8b69489f42d0,2700,3200,2,Tình huống và lệnh đổi tên local đầy đủ; câu tiếp theo bị cắt.
+B,02.01,1927,d56a46e4-5809-5c24-98f9-dcb222bcfc09,1753,2251,2,"Giới thiệu lệnh clone và phân biệt với checkout, dù câu phụ cuối bị cắt."
+B,02.02,12259,ef1947c9-c089-5406-8c4d-998774b743af,11819,12317,2,Nêu rõ khi nào dùng diff và hai câu hỏi cần trả lời.
+B,02.03,6462,6d4d8f6a-5ad8-5560-a493-6a134ea01492,6042,6500,2,"Định nghĩa đầy đủ author và committer, có tình huống minh họa."
+B,02.04,4480,d21009c2-caf9-5e5d-80b7-b707030231f7,4157,4570,2,Tiêu đề và tình huống khôi phục file tạo thành phần dẫn nhập rõ ràng.
+B,02.05,5507,52be0eec-c77b-5d7c-8ec5-63730db0100c,5037,5537,2,"Nêu nguồn origin, tác dụng fetch và việc merge riêng."
+B,02.06,4407,f40e3ef9-6db6-580d-aa43-1b57654da245,4071,4551,2,"Tình huống, checksum và lệnh tag nằm cùng nhau."
+B,02.07,1094,7be95f09-5276-5fbf-93a5-76024cf569d6,765,1258,2,Có ngữ cảnh và ví dụ cấu hình alias unstage đầy đủ.
+B,03.01,4326,5e2fe778-7675-5f16-a8fa-d337d999aae0,3958,4398,2,"Có tiêu đề, lệnh checkout và giải thích HEAD."
+B,03.02,5750,961dd375-04c9-5ae1-a8ae-180e93f679e8,5643,5813,2,"Phiên terminal có đủ lệnh checkout, merge và output thành công."
+B,03.03,2959,77640524-ad15-51a7-9708-9b1fa2bb37ef,2563,3022,1,Có tình huống và lưu ý nhưng thiếu bước thực hiện đổi tên.
+C,02.01,1927,d56a46e4-5809-5c24-98f9-dcb222bcfc09,1753,2251,2,"Giới thiệu lệnh clone và phân biệt với checkout, dù câu phụ cuối bị cắt."
+C,02.02,12259,ef1947c9-c089-5406-8c4d-998774b743af,11819,12317,2,Nêu rõ khi nào dùng diff và hai câu hỏi cần trả lời.
+C,02.03,6462,6d4d8f6a-5ad8-5560-a493-6a134ea01492,6042,6500,2,"Định nghĩa đầy đủ author và committer, có tình huống minh họa."
+C,02.04,4480,d21009c2-caf9-5e5d-80b7-b707030231f7,4157,4570,2,Tiêu đề và tình huống khôi phục file tạo thành phần dẫn nhập rõ ràng.
+C,02.05,5507,52be0eec-c77b-5d7c-8ec5-63730db0100c,5037,5537,2,"Nêu nguồn origin, tác dụng fetch và việc merge riêng."
+C,02.06,4407,f40e3ef9-6db6-580d-aa43-1b57654da245,4071,4551,2,"Tình huống, checksum và lệnh tag nằm cùng nhau."
+C,02.07,1094,7be95f09-5276-5fbf-93a5-76024cf569d6,765,1258,2,Có ngữ cảnh và ví dụ cấu hình alias unstage đầy đủ.
+C,03.01,4326,5e2fe778-7675-5f16-a8fa-d337d999aae0,3958,4398,2,"Có tiêu đề, lệnh checkout và giải thích HEAD."
+C,03.02,5750,961dd375-04c9-5ae1-a8ae-180e93f679e8,5643,5813,2,"Phiên terminal có đủ lệnh checkout, merge và output thành công."
+C,03.03,2959,77640524-ad15-51a7-9708-9b1fa2bb37ef,2563,3022,1,Có tình huống và lưu ý nhưng thiếu bước thực hiện đổi tên.

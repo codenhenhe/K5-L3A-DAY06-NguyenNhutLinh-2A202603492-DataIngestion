@@ -1,0 +1,16 @@
+strategy,question_id,score,reason
+A,q16,1,Hạng 2 có git bisect run; top-3 thiếu quy ước mã thoát.
+A,q17,0,"Cùng mục submodule nhưng chỉ có checkout, cấu hình và diff, thiếu bước khởi tạo đệ quy."
+A,q18,2,Hạng 1 cho thấy verify báo thiếu commit tiên quyết và nhắc bundle hợp lệ; hạng 2 xác nhận chức năng kiểm tra.
+A,q19,0,Ví dụ rebase và lịch sử chia nhánh thiếu cơ chế git replace.
+A,q20,0,Hạng 1 nói về pre-rebase và post-rewrite; hai hạng sau nói về submodule.
+B,q16,1,Hạng 3 có git bisect run nhưng thiếu quy ước mã thoát.
+B,q17,1,"Hạng 1 có tùy chọn đệ quy lúc clone, thiếu lệnh sau khi đã clone."
+B,q18,2,Hạng 3 nêu đầy đủ hai phép kiểm của bundle verify; hạng 1 có ví dụ lệnh.
+B,q19,1,Hạng 1 cho thấy refs/replace nhưng thiếu lệnh và cách tham chiếu thay thế.
+B,q20,0,"Các đoạn fetch, remote và submodule thiếu hai hook."
+C,q16,1,Hạng 3 có git bisect run nhưng thiếu quy ước mã thoát.
+C,q17,1,"Hạng 1 có tùy chọn đệ quy lúc clone, thiếu lệnh sau khi đã clone."
+C,q18,2,Hạng 3 nêu đầy đủ hai phép kiểm của bundle verify; hạng 1 có ví dụ lệnh.
+C,q19,1,Hạng 1 cho thấy refs/replace nhưng thiếu lệnh và cách tham chiếu thay thế.
+C,q20,1,"Hạng 1 nêu update chạy mỗi nhánh tại 08.04, thiếu pre-receive chạy mỗi push."

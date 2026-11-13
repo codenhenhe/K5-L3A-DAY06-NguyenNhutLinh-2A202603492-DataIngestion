@@ -1,0 +1,420 @@
+{
+  "source_id": "progit-v2-en",
+  "title": "Pro Git, Second Edition",
+  "authors": [
+    "Scott Chacon",
+    "Ben Straub"
+  ],
+  "publisher": "Apress",
+  "language": "en",
+  "source_path_or_url": "https://git-scm.com/book/en/v2",
+  "source_repository": "https://github.com/progit/progit2",
+  "source_snapshot": "a013e3230a1207cfa5ae94d28ba7d2021063c337",
+  "edition": 2,
+  "accessed_at": "2026-11-13",
+  "license_or_permission": {
+    "id": "CC-BY-NC-SA-3.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "upstream_notice": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/LICENSE.asc",
+    "use": "Lab học tập phi thương mại. Khi chia sẻ corpus, giữ ghi công, liên kết giấy phép, thông tin chỉnh sửa và cùng giấy phép."
+  },
+  "corpus": {
+    "path": "data/progit-v2-en.jsonl",
+    "format": "JSON Lines UTF-8",
+    "sha256": "0cc7a2d65b5ae40ea5db585141d993a572271c353d84869bf3aad6035df3a82f",
+    "unit_count": 32,
+    "normalized_char_count": 416462,
+    "min_unit_char_count": 2189,
+    "unit_counts_by_section": {
+      "Git Basics": 7,
+      "Git Branching": 6,
+      "Distributed Git": 3,
+      "Git Tools": 12,
+      "Customizing Git": 4
+    },
+    "counting_rule": "Mỗi mục chính trong các chương 2, 3, 5, 7, 8 là một đơn vị nguồn độc lập. Ranh giới là toàn bộ tệp AsciiDoc của mục được liệt kê trong chương ở commit đã chốt. Bỏ mở đầu chương, mục tóm tắt và các mục có include:: lồng nhau. page là ID mục dạng CC.MM theo thứ tự trong chương gốc, không phải số trang in. Đếm ký tự Unicode trong text sau chuẩn hóa, gồm khoảng trắng và xuống dòng, không gồm metadata JSON.",
+    "normalization": "Chuẩn hóa Unicode NFC, xuống dòng LF, bỏ khoảng trắng cuối dòng và gộp các dòng trống liên tiếp. Bỏ anchor, chỉ mục nội tuyến, chỉ thị nhúng ảnh và một số thuộc tính định dạng block AsciiDoc. Giữ tiêu đề, văn xuôi, caption, ví dụ lệnh và cấu trúc bảng/khối. Thay địa chỉ email bằng [email removed]."
+  },
+  "filter_fields": {
+    "section": {
+      "type": "string",
+      "value_source": "Tiêu đề chương tiếng Anh trong tệp chương AsciiDoc tại snapshot.",
+      "purpose": "Giới hạn truy xuất theo phạm vi chương, chẳng hạn lệnh cơ bản, phân nhánh hoặc quy trình cộng tác.",
+      "values": [
+        "Git Basics",
+        "Git Branching",
+        "Distributed Git",
+        "Git Tools",
+        "Customizing Git"
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page": "02.01",
+      "title": "Getting a Git Repository",
+      "section": "Git Basics",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/02-git-basics/sections/getting-a-repository.asc",
+      "source_lines": [
+        1,
+        87
+      ],
+      "normalized_char_count": 3855
+    },
+    {
+      "page": "02.02",
+      "title": "Recording Changes to the Repository",
+      "section": "Git Basics",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/02-git-basics/sections/recording-changes.asc",
+      "source_lines": [
+        1,
+        629
+      ],
+      "normalized_char_count": 24519
+    },
+    {
+      "page": "02.03",
+      "title": "Viewing the Commit History",
+      "section": "Git Basics",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/02-git-basics/sections/viewing-history.asc",
+      "source_lines": [
+        1,
+        306
+      ],
+      "normalized_char_count": 12924
+    },
+    {
+      "page": "02.04",
+      "title": "Undoing Things",
+      "section": "Git Basics",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/02-git-basics/sections/undoing.asc",
+      "source_lines": [
+        1,
+        235
+      ],
+      "normalized_char_count": 8961
+    },
+    {
+      "page": "02.05",
+      "title": "Working with Remotes",
+      "section": "Git Basics",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/02-git-basics/sections/remotes.asc",
+      "source_lines": [
+        1,
+        240
+      ],
+      "normalized_char_count": 11014
+    },
+    {
+      "page": "02.06",
+      "title": "Tagging",
+      "section": "Git Basics",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/02-git-basics/sections/tagging.asc",
+      "source_lines": [
+        1,
+        299
+      ],
+      "normalized_char_count": 8815
+    },
+    {
+      "page": "02.07",
+      "title": "Git Aliases",
+      "section": "Git Basics",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/02-git-basics/sections/aliases.asc",
+      "source_lines": [
+        1,
+        70
+      ],
+      "normalized_char_count": 2189
+    },
+    {
+      "page": "03.01",
+      "title": "Branches in a Nutshell",
+      "section": "Git Branching",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/03-git-branching/sections/nutshell.asc",
+      "source_lines": [
+        1,
+        210
+      ],
+      "normalized_char_count": 8653
+    },
+    {
+      "page": "03.02",
+      "title": "Basic Branching and Merging",
+      "section": "Git Branching",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/03-git-branching/sections/basic-branching-and-merging.asc",
+      "source_lines": [
+        1,
+        318
+      ],
+      "normalized_char_count": 11501
+    },
+    {
+      "page": "03.03",
+      "title": "Branch Management",
+      "section": "Git Branching",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/03-git-branching/sections/branch-management.asc",
+      "source_lines": [
+        1,
+        183
+      ],
+      "normalized_char_count": 5918
+    },
+    {
+      "page": "03.04",
+      "title": "Branching Workflows",
+      "section": "Git Branching",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/03-git-branching/sections/workflows.asc",
+      "source_lines": [
+        1,
+        63
+      ],
+      "normalized_char_count": 4530
+    },
+    {
+      "page": "03.05",
+      "title": "Remote Branches",
+      "section": "Git Branching",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/03-git-branching/sections/remote-branches.asc",
+      "source_lines": [
+        1,
+        236
+      ],
+      "normalized_char_count": 13002
+    },
+    {
+      "page": "03.06",
+      "title": "Rebasing",
+      "section": "Git Branching",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/03-git-branching/sections/rebasing.asc",
+      "source_lines": [
+        1,
+        240
+      ],
+      "normalized_char_count": 12140
+    },
+    {
+      "page": "05.01",
+      "title": "Distributed Workflows",
+      "section": "Distributed Git",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/05-distributed-git/sections/distributed-workflows.asc",
+      "source_lines": [
+        1,
+        102
+      ],
+      "normalized_char_count": 6314
+    },
+    {
+      "page": "05.02",
+      "title": "Contributing to a Project",
+      "section": "Distributed Git",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/05-distributed-git/sections/contributing.asc",
+      "source_lines": [
+        1,
+        802
+      ],
+      "normalized_char_count": 34782
+    },
+    {
+      "page": "05.03",
+      "title": "Maintaining a Project",
+      "section": "Distributed Git",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/05-distributed-git/sections/maintaining.asc",
+      "source_lines": [
+        1,
+        556
+      ],
+      "normalized_char_count": 27485
+    },
+    {
+      "page": "07.01",
+      "title": "Revision Selection",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/revision-selection.asc",
+      "source_lines": [
+        1,
+        401
+      ],
+      "normalized_char_count": 16174
+    },
+    {
+      "page": "07.02",
+      "title": "Interactive Staging",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/interactive-staging.asc",
+      "source_lines": [
+        1,
+        204
+      ],
+      "normalized_char_count": 7626
+    },
+    {
+      "page": "07.03",
+      "title": "Stashing and Cleaning",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/stashing-cleaning.asc",
+      "source_lines": [
+        1,
+        294
+      ],
+      "normalized_char_count": 11373
+    },
+    {
+      "page": "07.04",
+      "title": "Signing Your Work",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/signing.asc",
+      "source_lines": [
+        1,
+        204
+      ],
+      "normalized_char_count": 6737
+    },
+    {
+      "page": "07.05",
+      "title": "Searching",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/searching.asc",
+      "source_lines": [
+        1,
+        160
+      ],
+      "normalized_char_count": 7145
+    },
+    {
+      "page": "07.06",
+      "title": "Rewriting History",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/rewriting-history.asc",
+      "source_lines": [
+        1,
+        402
+      ],
+      "normalized_char_count": 18243
+    },
+    {
+      "page": "07.07",
+      "title": "Reset Demystified",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/reset.asc",
+      "source_lines": [
+        1,
+        331
+      ],
+      "normalized_char_count": 15892
+    },
+    {
+      "page": "07.09",
+      "title": "Rerere",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/rerere.asc",
+      "source_lines": [
+        1,
+        255
+      ],
+      "normalized_char_count": 7010
+    },
+    {
+      "page": "07.10",
+      "title": "Debugging with Git",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/debugging.asc",
+      "source_lines": [
+        1,
+        149
+      ],
+      "normalized_char_count": 8492
+    },
+    {
+      "page": "07.11",
+      "title": "Submodules",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/submodules.asc",
+      "source_lines": [
+        1,
+        1039
+      ],
+      "normalized_char_count": 41066
+    },
+    {
+      "page": "07.12",
+      "title": "Bundling",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/bundling.asc",
+      "source_lines": [
+        1,
+        171
+      ],
+      "normalized_char_count": 7022
+    },
+    {
+      "page": "07.13",
+      "title": "Replace",
+      "section": "Git Tools",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/replace.asc",
+      "source_lines": [
+        1,
+        211
+      ],
+      "normalized_char_count": 8620
+    },
+    {
+      "page": "08.01",
+      "title": "Git Configuration",
+      "section": "Customizing Git",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/08-customizing-git/sections/config.asc",
+      "source_lines": [
+        1,
+        517
+      ],
+      "normalized_char_count": 20627
+    },
+    {
+      "page": "08.02",
+      "title": "Git Attributes",
+      "section": "Customizing Git",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/08-customizing-git/sections/attributes.asc",
+      "source_lines": [
+        1,
+        377
+      ],
+      "normalized_char_count": 16812
+    },
+    {
+      "page": "08.03",
+      "title": "Git Hooks",
+      "section": "Customizing Git",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/08-customizing-git/sections/hooks.asc",
+      "source_lines": [
+        1,
+        131
+      ],
+      "normalized_char_count": 9355
+    },
+    {
+      "page": "08.04",
+      "title": "An Example Git-Enforced Policy",
+      "section": "Customizing Git",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/08-customizing-git/sections/policy.asc",
+      "source_lines": [
+        1,
+        443
+      ],
+      "normalized_char_count": 17666
+    }
+  ],
+  "excluded_pages": [
+    {
+      "page": "07.08",
+      "title": "Advanced Merging",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/advanced-merging.asc",
+      "reason": "Mục dùng include:: lồng nhau. Bỏ toàn bộ mục để mỗi đơn vị ánh xạ trực tiếp tới một tệp nguồn đầy đủ."
+    },
+    {
+      "page": "07.14",
+      "title": "Credential Storage",
+      "source": "https://github.com/progit/progit2/blob/a013e3230a1207cfa5ae94d28ba7d2021063c337/book/07-git-tools/sections/credentials.asc",
+      "reason": "Mục dùng include:: lồng nhau. Bỏ toàn bộ mục để mỗi đơn vị ánh xạ trực tiếp tới một tệp nguồn đầy đủ."
+    }
+  ]
+}

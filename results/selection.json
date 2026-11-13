@@ -1,0 +1,87 @@
+{
+  "selected": "A",
+  "selected_at": "2026-11-13T10:24:43.305158+00:00",
+  "selection_rule": [
+    "Evidence Hit@3 (descending)",
+    "Hit@1 (descending)",
+    "ingest_seconds (ascending)",
+    "A, B, C"
+  ],
+  "inputs": {
+    "model": "intfloat/multilingual-e5-small@614241f622f53c4eeff9890bdc4f31cfecc418b3",
+    "dimensions": 384,
+    "store": "Qdrant local 1.20.0",
+    "runtime": "ONNX Runtime 1.31.1",
+    "metric": "cosine exact",
+    "top_k": 3,
+    "corpus_sha256": "0cc7a2d65b5ae40ea5db585141d993a572271c353d84869bf3aad6035df3a82f",
+    "benchmark_sha256": "46fe32cde74f44cac5eadc57802bbf3558b6c498fed8bd0c0c20ea0dfa96adcd",
+    "strategies": {
+      "A": {
+        "index": "fixed",
+        "size": 500,
+        "overlap": 50,
+        "filter": false,
+        "hypothesis": "Overlap giữ lại bằng chứng gần ranh giới cửa sổ."
+      },
+      "B": {
+        "index": "paragraph",
+        "size": 500,
+        "overlap": 0,
+        "filter": false,
+        "hypothesis": "Ranh giới theo tiêu đề và đoạn giúp giữ bằng chứng cùng ngữ cảnh."
+      },
+      "C": {
+        "index": "paragraph",
+        "size": 500,
+        "overlap": 0,
+        "filter": true,
+        "hypothesis": "Lọc theo chương giảm kết quả ngoài phạm vi khi người hỏi chỉ định."
+      }
+    },
+    "api_cost_usd": 0
+  },
+  "indexes": {
+    "fixed": {
+      "chunks": 937,
+      "characters": {
+        "min": 68,
+        "median": 500,
+        "max": 500,
+        "total": 461712
+      },
+      "ingest_seconds": 29.701
+    },
+    "paragraph": {
+      "chunks": 1157,
+      "characters": {
+        "min": 14,
+        "median": 392,
+        "max": 500,
+        "total": 416460
+      },
+      "ingest_seconds": 33.72
+    }
+  },
+  "aliases": {
+    "day06_fixed": "day06_fixed_28e74edeee224d01815f02205f8a2f7c",
+    "day06_paragraph": "day06_paragraph_d47b2ca129414094883983d43a170018"
+  },
+  "dev_metrics": {
+    "A": {
+      "questions": 15,
+      "hit_at_1": 2,
+      "evidence_hit_at_3": 3
+    },
+    "B": {
+      "questions": 15,
+      "hit_at_1": 1,
+      "evidence_hit_at_3": 3
+    },
+    "C": {
+      "questions": 15,
+      "hit_at_1": 1,
+      "evidence_hit_at_3": 3
+    }
+  }
+}

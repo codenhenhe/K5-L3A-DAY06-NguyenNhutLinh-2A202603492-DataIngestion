@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed,500,50,document_id/source/page/section/title/char_start/char_end,off,intfloat/multilingual-e5-small@614241f622f53c4eeff9890bdc4f31cfecc418b3,Overlap giữ lại bằng chứng gần ranh giới cửa sổ.,2/15,3/15,0/5,0/5,"937 chunks, 29.701 s ingest, 0 USD API, selected on dev"
+B,paragraph,500,0,document_id/source/page/section/title/char_start/char_end,off,intfloat/multilingual-e5-small@614241f622f53c4eeff9890bdc4f31cfecc418b3,Ranh giới theo tiêu đề và đoạn giúp giữ bằng chứng cùng ngữ cảnh.,1/15,3/15,0/5,0/5,"1157 chunks, 33.72 s ingest, 0 USD API"
+C,paragraph,500,0,document_id/source/page/section/title/char_start/char_end,exact section when specified,intfloat/multilingual-e5-small@614241f622f53c4eeff9890bdc4f31cfecc418b3,Lọc theo chương giảm kết quả ngoài phạm vi khi người hỏi chỉ định.,1/15,3/15,0/5,0/5,"1157 chunks, 33.72 s ingest, 0 USD API, shared index with B"
